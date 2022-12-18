@@ -1,0 +1,37 @@
+{
+	"1": {
+		"item": "Rice",
+		"value": 5.0, 
+		"type": "Food"
+	},
+	"2": {
+		"item": "Beans",
+		"value": 3.0, 
+		"type": "Food"
+	},
+	"3": {
+		"item": "Pasta",
+		"value": 15.0,
+		"type": "Food"
+	},
+	"4": {
+		"item": "Orange juice",
+		"value": 5.0,
+		"type": "Juice"
+	},
+	"5": {
+		"item": "Hanger Steak",
+		"value": 20.0,
+		"type": "Meat"
+	},
+	"6": {
+		"item": "Lettuce Salad",
+		"value": 3.0,
+		"type": "Salad"
+	},
+	"7": {
+		"item": "Cup of Coffee",
+		"value": 3.0,
+		"type": "Cups"
+	}
+}

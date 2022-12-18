@@ -1,4 +1,5 @@
 from structures.client_request import ClientRequest
+import json
 
 
 class OrganizedEngine:
@@ -10,6 +11,7 @@ class OrganizedEngine:
         self.elements = elements
         self.type_ = type_
         self.next_client = {'name': '', 'age': ''}
+        self.menu = json.load(open('menu.json'))
 
     def organize_clients(self) -> None:
         senior_clients, other_clients = [], []
@@ -29,13 +31,14 @@ class OrganizedEngine:
         return 0
 
     def ordering(self, next_request: int):
-        order_type = str(input('Enter the type of the order: '))
         all_itens = []
         while True:
-            order = str(input('Enter the item: '))
-            value = float(input('Enter this item value: '))
-            all_itens.append({'item': order, 'value': value, 'type': order_type})
-            leave_order = str(input('Do you want do add more items? => [Y] or [N] \nChoice: ')).strip()
+            print("\nMenu")
+            for element in menu.keys():
+                print(f"\t[{element}] - {menu[element]['item']} | R$ {menu[element]['value']}")
+            choice = int(input('Chose the item: '))
+            all_itens.append(menu[choice])
+            leave_order = str(input('\nDo you want do add more items? => [Y] or [N] \nChoice: ')).strip()
             if leave_order.lower() == 'n':
                 break
             elif leave_order.lower() == 'y':
