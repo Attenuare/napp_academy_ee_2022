@@ -8,16 +8,18 @@ class OrganizedEngine():
     def __init__(self, elements: list or dict or None, type_: str) -> None:
         self.elements = elements
         self.type_ = type_
+        self.next_client = {'name': '', 'age': ''}
 
     def organize_clients(self) -> None:
         senior_clients, other_clients = [], []
-        if type_ == 'c':
+        if self.type_ == 'c':
             for client in self.elements:
                 if client.is_senior:
                     senior_clients.append(client)
                 else:
                     other_clients.append(client)
-            self.elements = senior_clients.extend(other_clients)
+            senior_clients.extend(other_clients)
+            return senior_clients 
 
     def find_client_by_name(self, name: str) -> list[object, int] or int:
         for client in self.elements:
@@ -38,3 +40,10 @@ class OrganizedEngine():
             elif leave_order.lower() == 'y':
                 continue
         return ClientRequest(next_request, all_itens)
+
+    def new_client(self):
+        name = str(input('Enter your full name: ')).strip()
+        age = int(input('Enter your age: '))
+        self.next_client['name'] = name
+        self.next_client['age'] = age
+        self.next_client['request'] = 0
