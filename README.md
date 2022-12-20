@@ -37,6 +37,6 @@
   <tr>
     <td align="center"><a href="https://github.com/Attenuare"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/102560265?v=4" width="100px;" alt=""/><br /><sub><b>Leandro Alves</b></sub></a><br /><a href="https://github.com/Attenuare" title="Attenuare's Cafeteria">☕</a></td>
     <td align="center"><a href="https://github.com/PedNeto"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/102253548?v=4" width="100px;" alt=""/><br /><sub><b>Pedro Rufino</b></sub></a><br /><a href="https://github.com/PedNeto" title="Attenuare's Cafeteria">☕</a></td>
-    <td align="center"><a href=""><img style="border-radius: 50%;" src="" width="100px;" alt=""/><br /><sub><b>Pietra Alves</b></sub></a><br /><a href="" title="Attenuare's Cafeteria">☕</a></td>
+    <td align="center"><a href="https://github.com/pie172"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/103082349?v=4" width="100px;" alt=""/><br /><sub><b>Pietra Alves</b></sub></a><br /><a href="" title="Attenuare's Cafeteria">☕</a></td>
   </tr>
 </table>
